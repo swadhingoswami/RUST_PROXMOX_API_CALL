@@ -54,14 +54,23 @@ Fetch Backup Info	~50–120 ms
 🧰 4. APIs Covered
 Feature	HTTP Method	API Endpoint
 Login	POST	/api2/json/access/ticket
+
 Get VMs List	GET	/api2/json/nodes/{node}/qemu
+
 Get VM Config	GET	/api2/json/nodes/{node}/qemu/{vmid}/config
+
 Get Storage List	GET	/api2/json/nodes/{node}/storage
+
 Get Backup Files	GET	/api2/json/nodes/{node}/storage/{storage}/content
+
 Start Backup Job	POST	/api2/json/nodes/{node}/vzdump
+
 Get Backup Status	GET	/api2/json/nodes/{node}/tasks/{upid}/status
+
 Get Task History	GET	/api2/json/nodes/{node}/tasks
+
 🏗️ 5. Architecture Highlights
+
 Built on modular design (ProxmoxClient struct) that manages:
 
 Auth sessions
